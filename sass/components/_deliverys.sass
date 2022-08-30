@@ -1,0 +1,50 @@
+.section-delivery
+    padding: 6rem 0
+    &__title
+        text-align: center
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__left
+        width: 50%
+    &__right
+        width: 50%
+        position: relative
+    &__btn
+        text-align: center
+        padding-top: 3rem
+
+
+.left
+    &__title
+        font-size: 3rem
+        font-weight: 700
+        margin-bottom: 1.6rem
+    &__paragraf
+        line-height: 2.2rem
+        margin-bottom: 1.6rem
+        text-align: left
+
+.right-img
+    position: absolute
+    width: 50%
+    box-shadow: $box-shadow
+    border-radius: .5rem
+    outline-offset: .9rem
+    transition: all .3s
+    &:hover
+        transform: scale(1.5)
+        outline: .3rem solid $color-yellow
+        z-index: 10
+    &__1
+        top: 3rem
+        left: 4rem
+        z-index: 5
+    &__2
+        top: 8rem
+        right: 12rem
+        z-index: 6
+    &__3
+        top: 18rem
+        left: 8rem
+        z-index: 7
