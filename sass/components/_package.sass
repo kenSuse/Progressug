@@ -1,0 +1,56 @@
+.section-package
+    padding: 8rem 0
+    position: relative
+    &__btn
+        text-align: center
+    &__title
+        text-align: center
+
+.bg-gradient
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7))
+.bg-video
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -2
+
+.package-card
+    width: 80%
+    background: rgba(255, 255, 255, 0.8)
+    box-shadow: $box-shadow
+    padding: 6rem
+    display: flex
+    align-items: center
+    margin-bottom: 8rem
+    &__img
+        width: 20rem
+        height: 20rem
+        border-radius: 50%
+        overflow: hidden
+        margin-right: 5rem
+        img
+            height: 100%
+            transform: scale(1.2)
+            transition: all .5s
+    &__box
+        width: 80%
+    &:hover img
+        transform: scale(1)
+        filter: blur(.1rem) brightness(80%)
+
+.title-third
+    &__h3
+        font-size: 3rem
+        font-weight: 700
+        margin-bottom: 1.6rem
+    &__paragraf
+        line-height: 2.2rem

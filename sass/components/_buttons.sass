@@ -1,0 +1,23 @@
+.btn
+    &, &:link, &:visited
+        text-transform: uppercase
+        text-decoration: none
+        color: $color-white
+        padding: 1.5rem 4rem
+        border-radius: 5rem
+        background: $color-red
+        font-size: 2rem
+        letter-spacing: .5rem
+        border: none
+        transition: all .3s
+        &:hover
+            cursor: pointer
+            transform: translateY(-.4rem)
+            box-shadow: $box-shadow
+            color: $color-yellow
+        &:active
+            transform: translateY(-.2rem)
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.1))
+    &_animations
+        animation: BtnToUp .5s ease .7s
+        animation-fill-mode: backwards
