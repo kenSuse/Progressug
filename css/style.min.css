@@ -311,7 +311,7 @@ body {
 }
 .section-connection__address {
   width: 50%;
-  padding: 3rem 0 0 3rem;
+  padding: 5rem 0 0 3rem;
 }
 
 .form {
@@ -364,7 +364,7 @@ body {
 }
 
 .stavropol, .svetlograd {
-  width: 80%;
+  width: 85%;
   padding: 3rem 2rem;
   border-radius: 0.5rem;
   background: #FFFFFF;
