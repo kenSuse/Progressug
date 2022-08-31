@@ -294,20 +294,8 @@ body {
   z-index: 7;
 }
 
-.section-aboutUs {
-  padding: 6rem 0;
-  background: #fffef7;
-}
-.section-aboutUs__title {
-  text-align: center;
-}
-.section-aboutUs__btn {
-  padding-top: 5rem;
-  text-align: center;
-}
-
 .section-connection {
-  padding: 6rem 0;
+  padding: 6rem 5rem;
 }
 .section-connection__box {
   background: linear-gradient(100deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 56%, rgba(0, 0, 0, 0.4) 56%, rgba(255, 255, 255, 0.4) 100%), url(../img/connection.jpg) right/cover no-repeat;
