@@ -5,17 +5,21 @@
         border-radius: .5rem
         box-shadow: $box-shadow
         overflow: hidden
+        display: flex
+        justify-content: space-between
+    &__address
+        width: 50%
+        padding-top: 5rem
+        padding-left: 3rem
 
 .form
-    width: 51%
+    width: 80%
     padding-top: 3rem
     padding-left: 3rem
-    &-btn
-        padding-top: 3rem
     &__group:not(:last-child)
         margin-bottom: 1.7rem
     &__group:last-child
-        margin-bottom: 5rem
+        margin-bottom: 3rem
     &__input
         font-size: 1.6rem
         font-weight: 400
@@ -43,11 +47,30 @@
         padding-top: 1rem
         padding-left: 1.6rem
         transition: all .3s
-
     &__input:placeholder-shown + &__label
         opacity: 0
         visibility: hidden
         transform: translateY(-3.5rem)
-    &__group-3
+
+.stavropol, .svetlograd
+    width: 80%
+    padding: 3rem 2rem
+    border-radius: .5rem
+    background: $color-white
+    margin-bottom: 2rem
+    &-title
+        font-size: 2.6rem
+        margin-bottom: 1.6rem
+    &-phone
+        margin-bottom: 1rem
+        span
+            font-weight: 700
+    &-time
+        margin-bottom: 1rem
+        span
+            font-weight: 700
+    &-address
+        span
+            font-weight: 700
 
 

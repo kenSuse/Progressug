@@ -314,21 +314,25 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.section-connection__address {
+  width: 50%;
+  padding-top: 5rem;
+  padding-left: 3rem;
 }
 
 .form {
-  width: 51%;
+  width: 80%;
   padding-top: 3rem;
   padding-left: 3rem;
-}
-.form-btn {
-  padding-top: 3rem;
 }
 .form__group:not(:last-child) {
   margin-bottom: 1.7rem;
 }
 .form__group:last-child {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .form__input {
   font-size: 1.6rem;
@@ -367,6 +371,34 @@ body {
   visibility: hidden;
   transform: translateY(-3.5rem);
 }
+
+.stavropol, .svetlograd {
+  width: 80%;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  background: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.stavropol-title, .svetlograd-title {
+  font-size: 2.6rem;
+  margin-bottom: 1.6rem;
+}
+.stavropol-phone, .svetlograd-phone {
+  margin-bottom: 1rem;
+}
+.stavropol-phone span, .svetlograd-phone span {
+  font-weight: 700;
+}
+.stavropol-time, .svetlograd-time {
+  margin-bottom: 1rem;
+}
+.stavropol-time span, .svetlograd-time span {
+  font-weight: 700;
+}
+.stavropol-address span, .svetlograd-address span {
+  font-weight: 700;
+}
+
 .header {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0.03%, rgba(255, 255, 255, 0.5) 99.94%), url(../img/header.jpg) center/cover no-repeat;
   height: 100vh;
