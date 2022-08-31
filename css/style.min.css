@@ -294,6 +294,79 @@ body {
   z-index: 7;
 }
 
+.section-aboutUs {
+  padding: 6rem 0;
+  background: #fffef7;
+}
+.section-aboutUs__title {
+  text-align: center;
+}
+.section-aboutUs__btn {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.section-connection {
+  padding: 6rem 0;
+}
+.section-connection__box {
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 56%, rgba(0, 0, 0, 0.4) 56%, rgba(255, 255, 255, 0.4) 100%), url(../img/connection.jpg) right/cover no-repeat;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.form {
+  width: 51%;
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+.form-btn {
+  padding-top: 3rem;
+}
+.form__group:not(:last-child) {
+  margin-bottom: 1.7rem;
+}
+.form__group:last-child {
+  margin-bottom: 5rem;
+}
+.form__input {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: #000000;
+  padding: 2rem;
+  background: #FFFFFF;
+  border: none;
+  border-bottom: 0.2rem solid transparent;
+  border-radius: 0.5rem;
+  width: 70%;
+}
+.form__input-3 {
+  height: 15rem;
+}
+.form__input:focus {
+  outline: none;
+  border-bottom: 0.2rem solid #66D763;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.form__input:focus:invalid {
+  border-bottom: 0.2rem solid #D76363;
+}
+.form__label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  display: block;
+  padding-top: 1rem;
+  padding-left: 1.6rem;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3.5rem);
+}
 .header {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0.03%, rgba(255, 255, 255, 0.5) 99.94%), url(../img/header.jpg) center/cover no-repeat;
   height: 100vh;
@@ -347,7 +420,7 @@ body {
   flex-direction: row;
 }
 .nav-menu__list-item {
-  margin-right: 5rem;
+  margin-right: 1.6rem;
 }
 .nav-menu__list-item:last-child {
   margin-right: 0rem;
@@ -369,4 +442,23 @@ body {
 }
 .nav-menu__list-link:active {
   transform: scale(1);
+}
+
+.footer {
+  height: 7rem;
+  background: #000000;
+}
+
+.footer__nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu__list-item {
+  margin-right: 3rem;
+}
+.footer-menu__list-link {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.min.css.map */

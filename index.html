@@ -20,9 +20,10 @@
             <nav class="header__nav nav-menu">
                 <ul class="nav-menu__list">
                     <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#product">Продукция</a></li>
-                    <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Упаковка</a></li>
-                    <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Доставка</a></li>
-                    <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">О нас</a></li>
+                    <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#package">Упаковка</a></li>
+                    <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#delivery">Доставка</a></li>
+                    <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#aboutUs">О нас</a></li>
+                    <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#connection">Связаться с нами</a></li>
                 </ul>
             </nav>
         </div>
@@ -132,7 +133,7 @@
             </div>
         </div>
 
-        <div class="section-package">
+        <div class="section-package" id="package">
             <div class="bg-gradient"></div>
             <video class="bg-video" autoplay muted loop>
                 <source src="img/Agriculture.mp4">
@@ -178,7 +179,8 @@
                 <button href="#" class="btn">Оставить заявку</button>
             </div>
         </div>
-        <div class="section-delivery container">
+
+        <div class="section-delivery container" id="delivery">
             <div class="section-delivery__title">
                 <h2 class="title">Доставка
                     <hr class="title__hr">
@@ -212,7 +214,67 @@
                 <button href="#" class="btn">Оставить заявку</button>
             </div>
         </div>
+
+        <div class="section-aboutUs" id="aboutUs">
+            <div class="section-aboutUs__title">
+                <h2 class="title">Мы на карте
+                    <hr class="title__hr">
+                </h2>
+            </div>
+            <div class="section-aboutUs__box">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af6cc2dc1a47a70798bdaed936dbe4d2feaa4421c8e7a87740d78b4f23a5c033b&amp;width=100%25&amp;height=599&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="section-aboutUs__btn">
+                <button href="#" class="btn">Оставить заявку</button>
+            </div>
+        </div>
+
+        <div class="section-connection container" id="connection">
+            <div class="section-aboutUs__title">
+                <h2 class="title">Связаться с нами
+                    <hr class="title__hr">
+                </h2>
+            </div>
+            <div class="section-connection__box">
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Ваше Имя" id="name" required>
+                        <label for="name" class="form__label">Ваше Имя</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Ваш E-mail" id="email" required>
+                        <label for="email" class="form__label">Ваш email</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" class="form__input form__input-3" placeholder="Введите текст" id="text">
+                        <label for="text" class="form__label">Текст</label>
+                    </div>
+                    <div class="form__group form-btn">
+                        <button class="btn">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </main>
+
+    <footer class="footer">
+        <div class="footer__nav nav-menu">
+            <ul class="nav-menu__list footer__nav-menu">
+                <li class="nav-menu__list-item footer-menu__list-item"><a
+                        class="nav-menu__list-link footer-menu__list-link" href="#product">Продукция</a></li>
+                <li class="nav-menu__list-item footer-menu__list-item"><a
+                        class="nav-menu__list-link footer-menu__list-link" href="#package">Упаковка</a></li>
+                <li class="nav-menu__list-item footer-menu__list-item"><a
+                        class="nav-menu__list-link footer-menu__list-link" href="#delivery">Доставка</a></li>
+                <li class="nav-menu__list-item footer-menu__list-item"><a
+                        class="nav-menu__list-link footer-menu__list-link" href="#aboutUs">О нас</a></li>
+                <li class="nav-menu__list-item footer-menu__list-item"><a
+                        class="nav-menu__list-link footer-menu__list-link" href="#connection">Связаться с нами</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 
