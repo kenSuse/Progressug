@@ -57,6 +57,26 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 1240px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
 
 body {
   font-family: "MontseratT", sans-serif;
@@ -242,6 +262,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1240px) {
+  .section-delivery__wrapper {
+    padding: 0 5rem;
+  }
+}
 .section-delivery__left {
   width: 50%;
 }
@@ -403,6 +428,11 @@ body {
   justify-content: space-between;
   padding-top: 2rem;
 }
+@media only screen and (max-width: 1240px) {
+  .header__menu {
+    padding: 1rem 5rem 0 5rem;
+  }
+}
 .header__box {
   position: absolute;
   top: 50%;
@@ -426,6 +456,11 @@ body {
   animation: LeftToRight 1.7s ease;
   backface-visibility: hidden;
 }
+@media only screen and (max-width: 1240px) {
+  .box-title__first {
+    font-size: 4rem;
+  }
+}
 .box-title__second {
   display: block;
   font-weight: 100;
@@ -436,6 +471,12 @@ body {
   animation: RightToLeft 1.7s ease;
   backface-visibility: hidden;
 }
+@media only screen and (max-width: 1240px) {
+  .box-title__second {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+}
 
 .nav-menu__list {
   list-style: none;
@@ -444,6 +485,11 @@ body {
 }
 .nav-menu__list-item {
   margin-right: 1.6rem;
+}
+@media only screen and (max-width: 1240px) {
+  .nav-menu__list-item {
+    margin-right: 0.3rem;
+  }
 }
 .nav-menu__list-item:last-child {
   margin-right: 0rem;
@@ -457,6 +503,11 @@ body {
   background-size: 220%;
   padding: 1rem 2rem;
   display: inline-block;
+}
+@media only screen and (max-width: 1240px) {
+  .nav-menu__list-link {
+    padding: 0.5rem 1rem;
+  }
 }
 .nav-menu__list-link:hover {
   color: #fbd809;

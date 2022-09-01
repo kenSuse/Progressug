@@ -10,6 +10,8 @@
         align-items: center
         justify-content: space-between
         padding-top: 2rem
+        @include respond(tab-land)
+            padding: 1rem 5rem 0 5rem
     &__box
         position: absolute
         top: 50%
@@ -30,6 +32,8 @@
         margin-bottom: 2rem
         animation: LeftToRight 1.7s ease
         backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 4rem
     &__second
         display: block
         font-weight: 100
@@ -39,6 +43,9 @@
         margin-bottom: 6rem
         animation: RightToLeft 1.7s ease
         backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 3rem
+            margin-bottom: 3.5rem
 
 .nav-menu
     &__list
@@ -47,6 +54,8 @@
         flex-direction: row
         &-item
             margin-right: 1.6rem
+            @include respond(tab-land)
+                margin-right: .3rem
             &:last-child
                 margin-right: 0rem
         &-link
@@ -59,6 +68,8 @@
             background-size: 220%
             padding: 1rem 2rem
             display: inline-block
+            @include respond(tab-land)
+                padding: .5rem 1rem
             &:hover
                 color: $color-yellow
                 background-position: 100%
