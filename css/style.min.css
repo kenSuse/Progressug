@@ -92,6 +92,11 @@ body {
   max-width: 144rem;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1240px) {
+  .container {
+    max-width: 130rem;
+  }
+}
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -427,11 +432,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 2rem;
-}
-@media only screen and (max-width: 1240px) {
-  .header__menu {
-    padding: 1rem 5rem 0 5rem;
-  }
 }
 .header__box {
   position: absolute;
