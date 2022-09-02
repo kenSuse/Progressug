@@ -69,7 +69,7 @@ html {
 }
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 30%;
+    font-size: 45%;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -104,7 +104,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .container {
-    max-width: 60rem;
+    max-width: 75rem;
   }
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .section-product {
-  padding: 5rem 0;
+  padding: 5rem 2rem;
 }
 .section-product__btn {
   text-align: center;
@@ -265,6 +265,7 @@ body {
 }
 @media only screen and (max-width: 900px) {
   .package-card {
+    width: 90%;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
@@ -327,7 +328,7 @@ body {
 }
 @media only screen and (max-width: 1240px) {
   .section-delivery__wrapper {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -407,7 +408,7 @@ body {
 }
 
 .section-connection {
-  padding: 6rem 1rem;
+  padding: 6rem 2rem;
 }
 .section-connection__box {
   background: linear-gradient(100deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 56%, rgba(0, 0, 0, 0.4) 56%, rgba(255, 255, 255, 0.4) 100%), url(../img/connection.jpg) right/cover no-repeat;
@@ -533,6 +534,7 @@ body {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0.03%, rgba(255, 255, 255, 0.5) 99.94%), url(../img/header.jpg) center/cover no-repeat;
   height: 100vh;
   position: relative;
+  background-attachment: fixed;
 }
 @media only screen and (max-width: 900px) {
   .header {
@@ -675,6 +677,11 @@ body {
   height: 7rem;
   background: #000000;
 }
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 15rem;
+  }
+}
 
 .footer__nav {
   height: 100%;
@@ -688,11 +695,27 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+  .footer-menu__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .footer-menu__list-item {
   margin-right: 3rem;
 }
 .footer-menu__list-item:last-child {
   margin-right: 0;
+}
+@media only screen and (max-width: 600px) {
+  .footer-menu__list-item {
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer-menu__list-item {
+    margin-right: 0;
+  }
 }
 .footer-menu__list-link {
   text-decoration: none;
@@ -706,15 +729,16 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .footer-menu__list-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .hamburger {
     position: fixed;
-    right: 3rem;
-    top: 3rem;
+    right: 5rem;
+    top: 5rem;
     width: 30px;
     height: 14px;
     z-index: 99;
