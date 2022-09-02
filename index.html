@@ -253,25 +253,26 @@
                 </h2>
             </div>
             <div class="section-connection__box">
-                <form action="#" class="form">
+                <form action="sendmail.php" method="POST" class="form" id="date">
                     <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Ваше Имя" id="name" required>
+                        <input type="text" class="form__input" name="name" placeholder="Ваше Имя" id="name" maxlength="15" required>
                         <label for="name" class="form__label">Ваше Имя</label>
                     </div>
                     <div class="form__group">
-                        <input type="email" class="form__input" placeholder="E-mail" id="email" required>
+                        <input type="email" class="form__input" name="email" placeholder="E-mail" id="email" maxlength="50" required>
                         <label for="email" class="form__label">Email</label>
                     </div>
                     <div class="form__group">
-                        <input type="phone" class="form__input" placeholder="Телефон" id="phone" required>
+                        <input type="phone" class="form__input" name="phone" placeholder="Телефон" id="phone" maxlength="15" required>
                         <label for="phone" class="form__label">Телефон</label>
                     </div>
                     <div class="form__group">
-                        <input type="text" class="form__input form__input-3" placeholder="Текст сообщения" id="text">
+                        <input type="text" class="form__input form__input-3" name="text" maxlength="150" placeholder="Текст сообщения"
+                            id="text">
                         <label for="text" class="form__label">Текст сообщения</label>
                     </div>
                     <div class="form__group form-btn">
-                        <button class="btn">Оставить заявку</button>
+                        <button type="submit" class="btn" form="date">Оставить заявку</button>
                     </div>
                 </form>
                 <div class="section-connection__address">
@@ -296,16 +297,12 @@
     <footer class="footer">
         <div class="footer__nav footer__nav-menu">
             <ul class="footer-menu__list">
-                <li class="footer-menu__list-item"><a
-                        class="footer-menu__list-link" href="#product">Продукция</a></li>
-                <li class="footer-menu__list-item"><a
-                        class="footer-menu__list-link" href="#package">Упаковка</a></li>
-                <li class="footer-menu__list-item"><a
-                        class="footer-menu__list-link" href="#delivery">Доставка</a></li>
-                <li class="footer-menu__list-item"><a
-                        class="footer-menu__list-link" href="#aboutUs">О нас</a></li>
-                <li class="footer-menu__list-item"><a
-                        class="footer-menu__list-link" href="#connection">Связаться с нами</a></li>
+                <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="#product">Продукция</a></li>
+                <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="#package">Упаковка</a></li>
+                <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="#delivery">Доставка</a></li>
+                <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="#aboutUs">О нас</a></li>
+                <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="#connection">Связаться с
+                        нами</a></li>
             </ul>
         </div>
     </footer>
