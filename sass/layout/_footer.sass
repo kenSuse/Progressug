@@ -8,10 +8,18 @@
     justify-content: center
 
 .footer-menu
+    &__list
+        list-style: none
+        display: flex
+        justify-content: space-between
     &__list-item
         margin-right: 3rem
+        &:last-child
+            margin-right: 0
     &__list-link
+        text-decoration: none
         color: $color-white
+        padding: 1rem 2rem
         @include respond(tab-port)
             font-size: 1.4rem
         @include respond(phone)
