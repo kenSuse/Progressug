@@ -3,6 +3,8 @@
     height: 100vh
     position: relative
     background-attachment: fixed
+    @include respond(tab-port)
+        // background-attachment: local
 
     &__menu
         display: flex
@@ -32,6 +34,9 @@
         backface-visibility: hidden
         @include respond(tab-land)
             font-size: 4rem
+        @include respond(tab-port)
+        font-size: 3.6rem
+
     &__second
         display: block
         font-weight: 100
@@ -42,10 +47,15 @@
         animation: RightToLeft 1.7s ease
         backface-visibility: hidden
         @include respond(tab-land)
-            font-size: 3rem
+            font-size: 2.6rem
             margin-bottom: 3.5rem
+        @include respond(tab-port)
+            font-size: 2.2rem
+            letter-spacing: .2rem
 
 .nav-menu
+    @include respond(tab-port)
+        display: none
     &__list
         list-style: none
         display: flex

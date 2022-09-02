@@ -23,8 +23,16 @@
     align-items: center
     justify-content: space-between
     margin-bottom: 8rem
+    @include respond(tab-port)
+        display: inline-block
+        width: 100%
+        margin-bottom: 3rem
     &__box
         width: 55%
+        @include respond(tab-port)
+            width: 100%
+            padding: 2rem 0
+            text-align: center
     &__title
         font-size: 3rem
         font-weight: 700
@@ -39,6 +47,11 @@
         transition: all .3s
         outline-offset: .9rem
         box-shadow: (4px 4px 4px rgba(0, 0, 0, 0.3))
+        @include respond(tab-land)
+            height: 30rem
+            width: 35rem
+        @include respond(tab-port)
+            margin: 0 auto
         img
             width: 100%
             height: 100%

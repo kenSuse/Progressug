@@ -34,12 +34,19 @@
     align-items: center
     margin-bottom: 5rem
     border-radius: .5rem
+    @include respond(tab-port)
+        flex-wrap: wrap
+        justify-content: center
+        padding: 2rem
     &__img
         width: 20rem
         height: 20rem
         border-radius: 50%
         overflow: hidden
         margin-right: 5rem
+        @include respond(tab-port)
+            margin-right: 0
+            margin-bottom: 2rem
         img
             height: 100%
             transform: scale(1.2)
@@ -51,9 +58,13 @@
         filter: blur(.1rem) brightness(80%)
 
 .title-third
+    @include respond(tab-port)
+        text-align: center
     &__h3
         font-size: 3rem
         font-weight: 700
         margin-bottom: 1.6rem
+        @include respond(tab-port)
+            font-size: 2.6rem
     &__paragraf
         line-height: 2.2rem
