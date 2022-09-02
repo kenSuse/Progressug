@@ -417,6 +417,7 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media only screen and (max-width: 900px) {
   .section-connection__box {
@@ -427,13 +428,18 @@ body {
   }
 }
 .section-connection__address {
-  width: 50%;
+  width: 52%;
   padding: 5rem 0 0 1rem;
 }
 @media only screen and (max-width: 900px) {
   .section-connection__address {
-    width: 100%;
+    width: 82%;
     padding: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section-connection__address {
+    width: 100%;
   }
 }
 
@@ -494,7 +500,7 @@ body {
 }
 
 .stavropol, .svetlograd {
-  width: 85%;
+  width: 90%;
   padding: 2rem 1rem;
   border-radius: 0.5rem;
   background: #FFFFFF;
@@ -503,6 +509,12 @@ body {
 @media only screen and (max-width: 900px) {
   .stavropol, .svetlograd {
     margin: 2rem auto;
+    width: 86%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .stavropol, .svetlograd {
+    width: 95%;
   }
 }
 .stavropol-title, .svetlograd-title {
@@ -729,7 +741,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .footer-menu__list-link {
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 0;
   }
 }
