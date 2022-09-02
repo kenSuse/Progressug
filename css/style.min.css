@@ -102,6 +102,11 @@ body {
     max-width: 90rem;
   }
 }
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 60rem;
+  }
+}
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -402,7 +407,7 @@ body {
 }
 
 .section-connection {
-  padding: 6rem 5rem;
+  padding: 6rem 1rem;
 }
 .section-connection__box {
   background: linear-gradient(100deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 56%, rgba(0, 0, 0, 0.4) 56%, rgba(255, 255, 255, 0.4) 100%), url(../img/connection.jpg) right/cover no-repeat;
@@ -502,6 +507,11 @@ body {
 .stavropol-title, .svetlograd-title {
   font-size: 2.6rem;
   margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 600px) {
+  .stavropol-title, .svetlograd-title {
+    text-align: center;
+  }
 }
 .stavropol-phone, .svetlograd-phone {
   margin-bottom: 1rem;
